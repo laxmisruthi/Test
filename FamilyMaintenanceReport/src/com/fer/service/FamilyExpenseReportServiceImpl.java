@@ -142,8 +142,8 @@ public class FamilyExpenseReportServiceImpl implements FamilyExpenseReportServic
 
 	@Override
 	public boolean resetPassword(String username, String password) {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		logger.info("FamilyExpenseReportServiceImpl.resetPassword() start");
+		//Session session = HibernateUtil.getSessionFactory().openSession();
+		//logger.info("FamilyExpenseReportServiceImpl.resetPassword() start");
 		try {
 			Transaction transaction = session.beginTransaction();
 			Query query = session
